@@ -1,6 +1,6 @@
 # php-pagamentos-pix
 
-Monolito em PHP básico.
+Monolito. CRUD básico. Sem Orientação a Objetos.
 
 ## Tecnologias utilizadas
 
