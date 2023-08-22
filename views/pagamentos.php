@@ -15,18 +15,18 @@
 		<?php
 		include 'resources/db/db_select.php';
 		while ($linha = mysqli_fetch_array($consulta_pagamentos)) {
-			echo '<tr><td>' . $linha['descricao'] . '</td>';
+			echo '<tr style="text-align: center;"><td>' . $linha['descricao'] . '</td>';
 			echo '<td>' . $linha['data_pagamento'] . '</td>';
 			echo '<td>' . $linha['valor'] . '</td>';
 			echo '<td>' . $linha['chave_pix'] . '</td>';
 		?>
 			<td style="text-align: center;">
-				<a href="?pagina=inserir_pagamento&editar=<?php echo $linha['id']; ?>">
+				<a href="?pagina=inserir_pagamento&id_pagamento_edit=<?php echo $linha['id']; ?>">
 					<i class="fa-solid fa-user-pen"></i>
 				</a>
 			</td>
 			<td style="text-align: center;">
-				<a href="../controller/deleta_pagamento.php?id=<?php echo $linha['id']; ?>">
+				<a href="../controller/deleta_pagamento.php?id_pagamento_delete=<?php echo $linha['id']; ?>">
 					<i class="fa-solid fa-trash"></i>
 				</a>
 			</td>

@@ -3,7 +3,7 @@
 include 'resources/db/db_conexao.php';
 
 $query = "SELECT * FROM pessoa";
-$consulta_pessoas = mysqli_query($conexao, $query);
+$consulta_clientes = mysqli_query($conexao, $query);
 
 $query = "SELECT * FROM pagamento";
 $consulta_pagamentos = mysqli_query($conexao, $query);
