@@ -2,7 +2,7 @@
 
 <footer>
 	<div class="container">
-		©2018 DogCursos - Todos os direitos reservados.
+		©2023 PixPagamentos - Todos os direitos reservados.
 	</div>
 
 	<script src="resources/js/jquery.js"></script>

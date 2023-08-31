@@ -12,5 +12,5 @@ Monolito em PHP básico.
 
 Para rodar é preciso:
 
-** Criar um esquema no MySQL com o nome 'pagamentos_pix';
-** Criar um usuário na tabela 'usuario' com usuario = root e senha = 123123;
+Criar um esquema no MySQL com o nome 'pagamentos_pix';
+Criar um usuário na tabela 'usuario' com usuario = root e senha = 123123;

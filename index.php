@@ -10,34 +10,32 @@ include 'resources/db/db_conexao.php';
 include 'header.php';
 
 # Conteúdo da página
-if (isset($_SESSION['login'])) {
-	if (isset($_GET['pagina'])) {
-		$pagina = $_GET['pagina'];
-	} else {
-		$pagina = 'pagamentos';
-	}
-} else {
-	$pagina = 'home';
-}
+include 'conteudo.php';
 
 switch ($pagina) {
+	case 'cliente_list':
+		include 'views/cliente/list/index.php';
+		break;
+	case 'cliente_add':
+		include 'views/cliente/add/index.php';
+		break;
+	case 'cliente_edit':
+		include 'views/cliente/edit/index.php';
+		break;
+	case 'cliente_delete':
+		include 'views/cliente/delete/index.php';
+		break;
 	case 'pagamentos':
-		include 'views/pagamentos.php';
+		include 'views/pagamento/list/index.php';
 		break;
 	case 'contas':
-		include 'views/contas.php';
+		include 'views/conta/list/index.php';
 		break;
-	case 'clientes':
-		include 'views/clientes.php';
+	case 'conta_add':
+		include 'views/conta/add/index.php';
 		break;
-	case 'inserir_cliente':
-		include 'controller/inserir_cliente.php';
-		break;
-	case 'inserir_conta':
-		include 'controller/inserir_conta.php';
-		break;
-	case 'inserir_pagamento':
-		include 'controller/inserir_pagamento.php';
+	case 'pagamento_add':
+		include 'views/pagamento/add/index.php';
 		break;
 	default:
 		include 'home.php';

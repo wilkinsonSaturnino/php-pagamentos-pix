@@ -1,4 +1,5 @@
-<a class="btn btn-success" href="?pagina=inserir_pagamento">Inserir novo pagamento</a><br /><br />
+<h1 style="text-align:center">Pagamentos</h1>
+<a class="btn btn-success" href="?pagina=pagamento_add">Inserir novo pagamento</a><br /><br />
 <table class="table table-hover table-striped" id="pagamentos">
 	<thead>
 		<tr style="text-align: center;">
@@ -26,7 +27,7 @@
 				</a>
 			</td>
 			<td style="text-align: center;">
-				<a href="../controller/deleta_pagamento.php?id_pagamento_delete=<?php echo $linha['id']; ?>">
+				<a href="controller/deleta_pagamento.php?id_pagamento_delete=<?php echo $linha['id']; ?>">
 					<i class="fa-solid fa-trash"></i>
 				</a>
 			</td>

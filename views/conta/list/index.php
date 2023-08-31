@@ -1,4 +1,5 @@
-<a class="btn btn-success" href="?pagina=inserir_conta">Inserir nova conta</a><br /><br />
+<h1 style="text-align:center">Contas</h1>
+<a class="btn btn-success" href="?pagina=conta_add">Inserir nova conta</a><br /><br />
 <table class="table table-hover table-striped" id="contas">
 	<thead>
 		<tr style="text-align: center;">
@@ -28,7 +29,7 @@
 				</a>
 			</td>
 			<td style="text-align: center;">
-				<a href="../controller/deleta_conta.php?id_conta_delete=<?php echo $linha['id']; ?>">
+				<a href="controller/deleta_conta.php?id_conta_delete=<?php echo $linha['id']; ?>">
 					<i class="fa-solid fa-trash"></i>
 				</a>
 			</td>

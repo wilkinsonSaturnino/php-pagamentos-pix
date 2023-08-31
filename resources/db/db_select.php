@@ -1,6 +1,6 @@
 <?php
 
-include 'resources/db/db_conexao.php';
+include 'db_conexao.php';
 
 $query = "SELECT * FROM pessoa";
 $consulta_clientes = mysqli_query($conexao, $query);
