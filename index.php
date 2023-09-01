@@ -4,7 +4,7 @@
 session_start();
 
 # Base de dados
-include 'resources/db/db_conexao.php';
+include 'resources/db/conexao.php';
 
 # Cabeçalho
 include 'header.php';
@@ -14,28 +14,40 @@ include 'conteudo.php';
 
 switch ($pagina) {
 	case 'cliente_list':
-		include 'views/cliente/list/index.php';
+		include 'views/cliente/list.php';
 		break;
 	case 'cliente_add':
-		include 'views/cliente/add/index.php';
+		include 'views/cliente/add.php';
 		break;
 	case 'cliente_edit':
-		include 'views/cliente/edit/index.php';
+		include 'views/cliente/edit.php';
 		break;
 	case 'cliente_delete':
-		include 'views/cliente/delete/index.php';
+		include 'views/cliente/delete.php';
 		break;
-	case 'pagamentos':
-		include 'views/pagamento/list/index.php';
-		break;
-	case 'contas':
-		include 'views/conta/list/index.php';
-		break;
-	case 'conta_add':
-		include 'views/conta/add/index.php';
+	case 'pagamento_list':
+		include 'views/pagamento/list.php';
 		break;
 	case 'pagamento_add':
-		include 'views/pagamento/add/index.php';
+		include 'views/pagamento/add.php';
+		break;
+	case 'pagamento_edit':
+		include 'views/pagamento/edit.php';
+		break;
+	case 'pagamento_delete':
+		include 'views/pagamento/delete.php';
+		break;
+	case 'conta_list':
+		include 'views/conta/list.php';
+		break;
+	case 'conta_add':
+		include 'views/conta/add.php';
+		break;
+	case 'conta_edit':
+		include 'views/conta/edit.php';
+		break;
+	case 'conta_delete':
+		include 'views/conta/delete.php';
 		break;
 	default:
 		include 'home.php';
