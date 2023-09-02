@@ -1,6 +1,6 @@
 <?php
 
-include '../resources/db/db_conexao.php';
+include '../resources/db/conexao.php';
 
 /* Para salvar no banco de dados a senha criptografada
 print($_POST['senha']);

@@ -25,18 +25,6 @@ switch ($pagina) {
 	case 'cliente_delete':
 		include 'views/cliente/delete.php';
 		break;
-	case 'pagamento_list':
-		include 'views/pagamento/list.php';
-		break;
-	case 'pagamento_add':
-		include 'views/pagamento/add.php';
-		break;
-	case 'pagamento_edit':
-		include 'views/pagamento/edit.php';
-		break;
-	case 'pagamento_delete':
-		include 'views/pagamento/delete.php';
-		break;
 	case 'conta_list':
 		include 'views/conta/list.php';
 		break;
